@@ -28,4 +28,8 @@
 								   pinBlock:(NSString *)pinBlock
 						   andResponseBlock:(void(^)(HpsTokenData *))responseBlock;
 
+- (void) getTokenWithCardDictionary:(NSDictionary *)cardDictionary
+          orEncryptedCardDictionary:(NSDictionary *)encryptedCardDictionary
+                   andResponseBlock:(void(^)(HpsTokenData*))responseBlock;
+
 @end
